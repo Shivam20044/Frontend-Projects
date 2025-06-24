@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root{
+    --main-color:#deab5f;
+    --primary-color:#312e2e;
+}
+/* utility style */
+button{
+    padding:10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #100e0f;
+
+}
+/* nav start */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+li a{
+   color: #fff; 
+   text-decoration: none;
+   margin-left: 40px;
+
+}
+nav h1{
+    background: url(images/pexels-chitokan-2183027-removebg-preview.png);
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+}
+li a:hover{
+    border-bottom:2px solid var(--main-color) ;
+}
+/* nav ends */
+
+/* header start */
+.header{
+    background: url(images/pexels-nao-triponez-129207.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    font-family: 'Playfair Display',seirf;
+    font-weight: normal;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.main-heading{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    
+}
+.primary-heading{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    margin-bottom: -40px;
+}
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 20px 30px;
+    margin-top: 20px;
+    background: transparent;
+    background: var(--main-color);
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+}
+/* our story start */
+#our-story{
+    /* height: 100vh; */
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background: url(images/pexels-chitokan-2183027-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family: "Playfair Display",serif;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-120px);
+    -webkit-transform: translateX(-120px);
+    -moz-transform: translateX(-120px);
+    -ms-transform: translateX(-120px);
+    -o-transform: translateX(-120px);
+}
+.section-content p{
+  max-width: 500px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+/* our story end */
+
+/* coffee start */
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+
+}
+
+.img-2{
+    width: 400px;
+    height: 400px;
+
+}
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+    font-family: "Playfair Display",serif;
+    font-weight: normal;
+}
+.content-section p{
+  max-width: 500px;  
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #fff;
+
+}
+/* coffe end */
+/* products section start */
+.products{
+    margin-top: 5rem;
+}
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border:2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+}
+.img-one{
+    background: url(images/1.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url(images/2.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-three{
+    background: url(images/3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+.items p{
+    color: #fff;
+    font-family: sans-serif;
+    margin: 20px 0;
+}
+/* product end */
+footer{
+    height: vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+footer .container{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+footer .heading-info{
+    margin-bottom: 20px;
+
+}
+footer p{
+    line-height: 25px;
+
+}
+span{
+    color: var(--main-color);
+}
+
+.para{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom:  20px;
+}
+/* footer end
+/* /* media query */
+/* @media only screen and (max-width:768px){
+    .main-heading, .primary-heading{
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story .title{
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+    }
+    #our-story .line{
+        display: none;
+    }
+    .content-section{
+        text-align: center;
+    }
+    #our-story.img-container.img{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .coffee-container.img-container{
+        margin
+    }
+} */
